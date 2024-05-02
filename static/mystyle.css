@@ -1,0 +1,98 @@
+
+.wrap {
+    background-color: rgba(232, 52, 78, 0.2); 
+    min-height: 100vh; 
+    padding-bottom: 50px; 
+}
+
+.banner {
+    width: 100%; 
+    height: 200px; 
+    background-color: white; 
+    background-image: url("/static/logo_red.png"); 
+    background-position: center; /* Center the background image */
+    background-size: contain; /* Ensure the image fits in the banner */
+    background-repeat: no-repeat; /* No repeating the image */
+    cursor: pointer; /* Cursor turns into a pointer when hovered */
+}
+
+/* Container for content such as forms and tables */
+.container {
+    width: 80%; /* 80% of the parent width */
+    max-width: 800px; /* Maximum width */
+    margin: 30px auto; /* Center horizontally and margin from top/bottom */
+    padding: 20px; /* Padding inside the container */
+    background-color: white; /* White background color */
+    border: 1px solid gray; /* Gray border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styles for the buttons */
+.btn-sparta {
+    color: white; /* White text */
+    background-color: #e8344e; /* Red background color */
+    border: 1px solid #e8344e; /* Red border */
+}
+
+.btn-sparta-outline {
+    color: #e8344e; /* Red text */
+    background-color: transparent; /* No background */
+    border: 1px solid #e8344e; /* Red border */
+}
+
+/* Search box styling */
+.search-box {
+    width: 70%; /* 70% of parent width */
+    margin: 50px auto; /* Center horizontally and margin from top/bottom */
+    max-width: 700px; /* Maximum width */
+}
+
+/* Table styling */
+.table {
+    width: 80%; /* 80% of parent width */
+    max-width: 800px; /* Maximum width */
+    margin: auto; /* Center the table */
+    table-layout: fixed; /* Fixed table layout for equal column widths */
+}
+
+/* Remove border from the top of the table headers */
+.table th {
+    border-top-style: none;
+}
+
+/* Table cell styling */
+td {
+    background-color: white; /* White background color for cells */
+    text-overflow: ellipsis; /* Text overflows with ellipsis */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* No wrapping of text */
+}
+
+/* Link styles within table cells */
+td > a, a:visited, a:hover, a:active {
+    color: black; /* Black text for links */
+}
+
+/* Rounded corners for the first and last table headers */
+thead:first-child tr:first-child th:first-child {
+    border-radius: 10px 0 0 0;
+}
+thead:first-child tr:first-child th:last-child {
+    border-radius: 0 10px 0 0;
+}
+thead:last-child tr:last-child th:first-child {
+    border-radius: 0 0 0 10px;
+}
+thead:last-child tr:last-child th:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+/* Highlighting rows in table */
+tr.highlight > td {
+    background-color: orange; /* Orange background for highlighted rows */
+    color: white; /* White text */
+}
+
+tr.highlight a {
+    color: white; /* White text for links in highlighted rows */
+}
